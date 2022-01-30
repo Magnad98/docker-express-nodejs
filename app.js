@@ -20,6 +20,10 @@ app.use(cors(corsOptions))
 
 app.use(router)
 
+app.use('/home', (req, res) => {
+    res.sendFile(path.join(__dirname + '/src/html/index.html'))
+})
+
 app.use('/', (req, res) => {
     res.send('This is the microservice 1 and version v1.0.0')
 })
