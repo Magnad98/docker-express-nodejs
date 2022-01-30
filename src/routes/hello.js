@@ -23,4 +23,14 @@ router.route('/:lang').get((req, res) => {
     res.json({msg})
 })
 
+router.route('/').post((req, res) => {
+    msg = `Hello ${req.body.name || 'World'} from post request!`;
+    res.json({msg})
+})
+
+router.route('/sum').post((req, res) => {
+    let result = req.body.a + req.body.b
+    res.json({result})
+})
+
 module.exports = router
