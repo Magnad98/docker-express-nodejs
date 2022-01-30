@@ -1,0 +1,28 @@
+{
+  "name": "docker-express-nodejs",
+  "version": "1.0.0",
+  "description": "microservice with nodejs and docker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magnad98/docker-express-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "docker"
+  ],
+  "author": "alexandru-cristian pop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Magnad98/docker-express-nodejs/issues"
+  },
+  "homepage": "https://github.com/Magnad98/docker-express-nodejs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2"
+  }
+}
