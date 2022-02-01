@@ -1,9 +1,10 @@
 # docker-express-nodejs
 microservice with nodejs and docker
 
-# start mongodb db
-* mongod - in one terminal
-* mongo - in another terminal
+# starting services
+* mongodb: mongod
+* server: cd server && npx nodemon index.js
+* react: cd client && yarn start
 
 # db crud
 * adding one item: POST localhost:3000/api/movie
