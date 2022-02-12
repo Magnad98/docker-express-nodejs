@@ -35,12 +35,17 @@ const CancelButton = styled.a.attrs({
     margin: 15px 15px 15px 5px;
 `
 
+const getMovieIDFromURL = () => {
+    const currentPathArray = window.location.pathname.split('/')
+    return currentPathArray[3]
+}
+
 class MoviesUpdate extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            id: this.props.match.params.id,
+            id: getMovieIDFromURL(),
             name: '',
             rating: '',
             time: '',
