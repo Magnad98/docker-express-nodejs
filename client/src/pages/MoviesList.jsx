@@ -33,7 +33,7 @@ class UpdateMovie extends Component {
 }
 
 class DeleteMovie extends Component {
-    deleteUser = event => {
+    deleteUser = async event => {
         event.preventDefault()
 
         if (
@@ -41,7 +41,7 @@ class DeleteMovie extends Component {
                 `Do tou want to delete the movie ${this.props.id} permanently?`,
             )
         ) {
-            api.deleteMovieById(this.props.id)
+            await api.deleteMovieById(this.props.id)
             window.location.reload()
         }
     }
