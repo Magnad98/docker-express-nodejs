@@ -1,6 +1,9 @@
 # docker-express-nodejs
 microservice with nodejs and docker
 
+# starting docker
+* docker-compose up
+
 # starting services
 * mongodb: mongod
 * server: cd server && npx nodemon index.js
