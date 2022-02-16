@@ -1,3 +1,7 @@
+# MeCallAPI.com testing data (email / password)
+* karn.yong@mecallapi.com / mecallapi
+* ivy.cal@mecallapi.com / mecallapi
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
