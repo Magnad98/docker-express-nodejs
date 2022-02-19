@@ -17,6 +17,15 @@ services:
       - mern-app
     depends_on:
       - mongo
+  api-server-auth:
+    build: ./server-auth
+    image: api-server-auth
+    ports:
+      - "5001:5001"
+    networks:
+      - mern-app
+    depends_on:
+      - mongo
   mongo:
     image: mongo:3.6.19-xenial
     ports:
