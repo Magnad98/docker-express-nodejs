@@ -36,9 +36,9 @@ router.post('/login', (req, res) => {
                             message : "Failed to create token"
                         }); 
                     } else {
-                        return res.status(201).send({
-                            message : "User Logged In",
-                            token : user.token
+                        return res.status(200).send({
+                            message : "Logged in",
+                            accessToken : user.token
                         })
                     }
                 });
