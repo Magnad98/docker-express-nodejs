@@ -1,24 +1,38 @@
 # docker-express-nodejs
 microservice with nodejs and docker
 
-# setup project
-* npm init -> specify name, description, entry point, keywords, author
-* npm install -s express
-* npm install -s cors
-* code . -> opens VSCode
+# starting docker
+* docker-compose up
 
-# to run the server
-* to run normally:
-* node app
-* to run with automatically refresh upon changes ON:
-* npx nodemon app
+# starting services
+* mongodb: mongod
+* server: cd server && npx nodemon index.js
+* react: cd client && yarn start
 
-# docker build
-* docker build -t docker-node .
-* docker run -p 3000:8080 -d --name nodejs-container docker-node
-
-# docker remove container/image (via console - you can also do this via docker desktop's ui)
-* docker ps -a
-* docker rm <container_id>
-* docker images
-* docker rmi <image_id>
+# db crud
+* adding one item: POST localhost:5000/api/movie
+{
+    "name":"Avengers: Endgame",
+    "time": ["14:15", "16:00", "21:30", "23:00"],
+    "rating": 8.8
+}
+* updating that item: PUT localhost:5000/api/movie/<id>
+{
+    "name":"Avengers: Endgame",
+    "time": ["12:00", "14:15", "16:00", "21:30", "23:00"],
+    "rating": 8.8
+}
+* adding two more items: POST localhost:5000/api/movie
+{
+    "name": "The Lord Of The Rings: The return of the king",
+    "time": ["15:00", "20:00"],
+    "rating": 8.9
+}
+{
+    "name": "The Godfather",
+    "time": ["21:00", "23:50"],
+    "rating": 9.2
+}
+* get all the movies: GET localhost:5000/api/movies
+* get a specific movie: GET localhost:5000/api/movie/<id>
+* delete movie: DELETE localhost:5000/api/movie/<id>

@@ -1,0 +1,53 @@
+[{
+    "name":"355",
+    "time":["15:20", "18:10", "21:15"],
+    "rating":8.5
+},{
+    "name":"Clifford, marele caine rosu",
+    "time":["13:00", "13:50", "16:10"],
+    "rating":8.6
+},{
+    "name":"Encanto",
+    "time":["13:10"],
+    "rating":8.7
+},{
+    "name":"Marita-te cu mine",
+    "time":["21:10"],
+    "rating":8.8
+},{
+    "name":"Matrix renastera",
+    "time":["18:30"],
+    "rating":8.9
+}, {
+    "name":"Moarte pe Nil",
+    "time":["20:40"],
+    "rating":9.0
+},{
+    "name":"Moonfall",
+    "time":["21:00"],
+    "rating":9.1
+},{
+    "name":"Omul-Paianjen: Niciun Drum Spre Casa",
+    "time":["20:45"],
+    "rating":9.2
+},{
+    "name":"Scream",
+    "time":["21:40"],
+    "rating":9.3
+},{
+    "name":"Tabara",
+    "time":["19:20"],
+    "rating":9.4
+},{
+    "name":"Venom: Sa fie carnagiu",
+    "time":["21:30"],
+    "rating":9.5
+},{
+    "name":"Uncharted",
+    "time":["12:00"],
+    "rating":9.6
+},{
+    "name":"Dog. Un Caine de legenda",
+    "time":["20:00"],
+    "rating":9.7
+}]
