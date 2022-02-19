@@ -4,6 +4,9 @@ let app = express();
 let bodyparser = require('body-parser');
 app.use(bodyparser.json());
 
+const cors = require('cors')
+app.use(cors())
+
 let mongoose = require('mongoose');
 mongoose.connect('mongodb://mongo:27017/cinema');
 mongoose.connection.on('connected', () => {
